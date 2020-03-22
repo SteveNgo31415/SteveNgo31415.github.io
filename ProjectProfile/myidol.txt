@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Google Icons</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style>
+body {
+	 font-family: 'Poppins', sans-serif;
+	 background: #3282B8;
+	 color: #333;
+}
+ .container {
+	 margin: 0 auto;
+	 width: 1200px;
+}
+ section.testimonial-section {
+	 text-align: center;
+}
+ section.testimonial-section p.desc {
+	 width: 50%;
+	 margin: 0 auto;
+}
+ .card-container {
+	 display: flex;
+	 flex-wrap: wrap;
+	 justify-content: center;
+	 width: 100%;
+	 margin-top: 50px;
+}
+ .card {
+	 width: 260px;
+	 background: #fff;
+	 padding: 30px;
+	 border-radius: 5px;
+	 margin: 20px 10px;
+	 box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
+	 -webkit-transition: all 200ms ease-in;
+	 -webkit-transform: scale(1);
+	 -ms-transition: all 200ms ease-in;
+	 -ms-transform: scale(1);
+	 -moz-transition: all 200ms ease-in;
+	 -moz-transform: scale(1);
+	 transition: all 200ms ease-in;
+	 transform: scale(1);
+}
+ .card:hover {
+	 background: linear-gradient(to top, #2A7886,#a18cd1 0%, #fbc2eb,#BEEBE9 100%);
+	 color: #fff;
+	 transform: scale(1.1);
+	 box-shadow: 0px 3px 15px #000 50;
+	 -webkit-transition: all 200ms ease-in;
+	 -webkit-transform: scale(1.1);
+	 -ms-transition: all 200ms ease-in;
+	 -ms-transform: scale(1.1);
+	 -moz-transition: all 200ms ease-in;
+	 -moz-transform: scale(1.1);
+	 transition: all 200ms ease-in;
+}
+ .card:hover .card__heading__img {
+	 bottom: 5px;
+	 transition: all 0.3s;
+}
+ .card:hover .card__heading__text p {
+	 color: #fff;
+}
+ .card:hover .card__body:before, .card:hover .card__body:after {
+	 opacity: 0.3;
+}
+ .card__heading {
+	 position: relative;
+}
+ .card__heading__img {
+	 height: 90px;
+	 width: 80px;
+	 position: absolute;
+	 left: 0;
+	 object-fit: cover;
+	 border-radius: 8px;
+	 bottom: -5px;
+}
+ .card__heading__text {
+	 text-align: left;
+	 margin-left: 100px;
+}
+ .card__heading__text h3, .card__heading__text p {
+	 margin: 0;
+	 padding: 0;
+}
+ .card__heading__text p {
+	 color: #666;
+	 font-size: 14px;
+}
+ .card__body {
+	 position: relative;
+	 margin-top: 50px;
+}
+ .card__body:before, .card__body:after {
+	 content: "";
+	 display: block;
+	 position: absolute;
+	 font-size: 40px;
+	 color: #f7f7f7;
+	 z-index: 1;
+}
+ .card__body:before {
+	 font-family: "Font Awesome 5 Free";
+	 font-weight: 900;
+	 content: "\f10d";
+	 top: 0;
+}
+ .card__body:after {
+	 font-family: "Font Awesome 5 Free";
+	 font-weight: 900;
+	 content: "\f10e";
+	 bottom: 0;
+	 right: 0;
+}
+ .card__body p {
+	 position: relative;
+	 z-index: 2;
+	 margin: 0;
+	 text-align: left;
+	 line-height: 2;
+}
+ .desc{
+ color:#FFF;
+ }
+</style>
+</head>
+<body>
+<main class="container">
+  <section class="testimonial-section">
+    <h1 class="desc">I'm designing My profile</h1>
+    <div class="card-container">
+      <div class="card">
+        <div class="card__heading">
+          <img class="card__heading__img" src="https://cdn.vox-cdn.com/thumbor/TN8KVPXDr7xVJH3Y3AlNWVs6Hhk=/0x86:706x557/1400x1400/filters:focal(0x86:706x557):format(png)/cdn.vox-cdn.com/assets/738480/stevejobs.png" alt="">
+          <div class="card__heading__text">
+            <h3>Steve Jobs</h3>
+            <p>CEO Apple</p>
+          </div>
+        </div>
+        <div class="card__body">
+          <p>A</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__heading">
+          <img class="card__heading__img" src="https://pbs.twimg.com/profile_images/988775660163252226/XpgonN0X_400x400.jpg" alt="">
+          <div class="card__heading__text">
+            <h3>Bill gates</h3>
+   <p>President Microsoft</p>
+          </div>
+        </div>
+        <div class="card__body">
+          <p>B</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__heading">
+          <img class="card__heading__img" src="https://www.biography.com/.image/t_share/MTE5NDg0MDU0OTU2OTAxOTAz/albert-einstein-9285408-1-402.jpg" alt="">
+          <div class="card__heading__text">
+            <h3>Albert einstein</h3>
+            <p>Theoretical physicist</p>
+          </div>
+        </div>
+        <div class="card__body">
+          <p>C</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__heading">
+          <img class="card__heading__img" src="https://i.insider.com/55e896aa9dd7cc1a008b8058?width=1024&format=jpeg" alt="">
+          <div class="card__heading__text">
+            <h3>Benjamin Franklin</h3>
+            <p>Americans first</p>
+          </div>
+        </div>
+        <div class="card__body">
+          <p>D</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+</body>
+</html> 

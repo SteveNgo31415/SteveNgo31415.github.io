@@ -10,6 +10,7 @@ $(document).ready(function() {
     }, 600);
 })
 
+  
 function firstQuestion(){
     
     $('.content').hide();
@@ -131,3 +132,6 @@ $('#yes').click(function() {
         }
     })
 })
+
+
+

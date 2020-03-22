@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link 
+  href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" 
+  rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@import url(https://fonts.googleapis.com/css?family=Roboto:900,300);
+body {
+  background-color: #000;
+  font-family: roboto;
+}
+.container {
+  width: 400px;
+  margin: 120px auto 120px;
+  background-color: #fff;
+  padding: 0 20px 20px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+  -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+  -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+  text-align: center;
+}
+.container:hover .avatar-flip {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+.container:hover .avatar-flip img:first-child {
+  opacity: 0;
+}
+.container:hover .avatar-flip img:last-child {
+  opacity: 1;
+}
+.avatar-flip {
+  border-radius: 100px;
+  overflow: hidden;
+  height: 170px;
+  width: 170px;
+  position: relative;
+  margin: auto;
+  top: -60px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 0 13px #f0f0f0;
+  -webkit-box-shadow: 0 0 0 13px #f0f0f0;
+  -moz-box-shadow: 0 0 0 13px #f0f0f0;
+}
+.avatar-flip img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 100px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+}
+.avatar-flip img:first-child {
+  z-index: 1;
+}
+.avatar-flip img:last-child {
+  z-index: 0;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  opacity: 0;
+}
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  margin-top: 1px;
+  color: #333;
+}
+h4 {
+  font-size: 90px;
+  color: #706C61;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+      margin-top: 5px;
+}
+p {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 10px;
+  color: #666;
+}
+hr {
+  height:0;
+  border-top:1px solid #706C61;
+  border-bottom:1px solid #3498db;
+  margin:5px 0;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="avatar-flip">
+    <img src="https://phunghuy.files.wordpress.com/2012/10/steve-jobs1.jpg?w=1140" height="170" width="170">
+    <img src="https://techtalk.vn/wp-content/uploads/2019/12/Kh%C3%B4ng-b%E1%BA%B1ng-%C4%91%E1%BA%A1i-h%E1%BB%8Dc-c%C5%A9ng-ch%E1%BA%B3ng-v%C6%B0%E1%BB%A3t-tr%E1%BB%99i-v%E1%BB%81-tr%C3%ACnh-%C4%91%E1%BB%99-c%C3%B4ng-ngh%E1%BB%87-t%E1%BA%A1i-sao-Steve-Jobs-l%E1%BA%A1i-x%C3%A2y-d%E1%BB%B1ng-l%C3%AAn-%C4%91%C6%B0%E1%BB%A3c-%C4%91%E1%BA%BF-ch%E1%BA%BF-Apple-h%C3%A0ng-t%E1%BB%B7-USDP1-696x522.jpg" height="170" width="170">
+  </div>
+  <h2>Steve Jobs</h2>
+   <hr>
+  <h4>
+  <i class="icon-apple"></i>
+</h4>
+  <p>Steven Paul Jobs (February 24, 1955 – October 5, 2011) was an American business magnate, industrial designer, investor, and media proprietor. He was the chairman, chief executive officer (CEO), and co-founder of Apple Inc.,</p>
+  <p>	
+Pioneer of the personal computer revolution with Steve Wozniak
+Co-creator of the Macintosh, iPod, iPhone, iPad, and first Apple Stores</p>
+</div>
+
+</body>
+</html>
