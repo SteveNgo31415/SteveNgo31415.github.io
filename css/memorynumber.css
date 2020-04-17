@@ -33,6 +33,11 @@ li {
     padding-top: 30px;
 }
 
+a #fa-home {
+    height: 50px;
+    width: 50px;
+}
+
 a:hover {
     color: #00A8CC;
     font-size: 40px;
