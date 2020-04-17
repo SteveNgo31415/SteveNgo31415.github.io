@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+  background-color: #f0f0f0;
+  font-family: roboto;
+}
+  .brd{
+  height: 160px;
+   text-align: center;
+  color: #FFF;
+  background-color: #0F4C75;
+  }
+  .brd1{
+  height: 160px;
+  width: 80%;
+   text-align: center;
+  color: #FFF;
+  background-color: #3282B8;
+  }
+  .brd2{
+  height: auto;
+   text-align: center;
+  color: #FFF;
+  background-color: #3282B8;
+  }
+  .brd3{
+  height: auto;
+  width: 80%;
+   text-align: center;
+  color: #FFF;
+  background-color: #0F4C75;
+  }
+  .brd4{
+  height: auto;
+   text-align: center;
+  color: #FFF;
+  background-color: #3282B8;
+  }
+  .brd5{
+  height: auto;
+  width: 80%;
+   text-align: center;
+  color: #FFF;
+  background-color: #BBE1FA;
+  }
+  .card {
+  margin: 20px 10px;
+  }
+  .brd6 {
+  width: 400px;
+  margin: 120px 10px 120px;
+  background-color: #fff;
+  padding: 0 20px 20px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+  -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+  -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+  text-align: center;
+}
+  .brd6:hover .avatar-flip{
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  }
+  .brd6:hover .avatar-flip img:first-child {
+  opacity: 0;
+}
+.brd6:hover .avatar-flip img:last-child {
+  opacity: 1;
+}
+.card-container{
+display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50px;
+}
+  .avatar-flip {
+  border-radius: 100px;
+  overflow: hidden;
+  height: 150px;
+  width: 150px;
+  position: relative;
+  margin: auto;
+  top: -60px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 0 13px #f0f0f0;
+  -webkit-box-shadow: 0 0 0 13px #f0f0f0;
+  -moz-box-shadow: 0 0 0 13px #f0f0f0;
+}
+.avatar-flip img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 100px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+}
+.avatar-flip img:first-child {
+  z-index: 1;
+}
+.avatar-flip img:last-child {
+  z-index: 0;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  opacity: 0;
+}
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+}
+h4 {
+  font-size: 13px;
+  color: #00baff;
+  letter-spacing: 1px;
+  margin-bottom: 25px
+}
+p {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 20px;
+  color: #FFF;
+}
+  </style>
+</head>
+<body>
+  
+<div class="container-fluid brd">
+ <div class="container brd1">
+  <h1>My First Bootstrap Page</h1>      
+  <p>This part is inside a .container-fluid class.</p> 
+  <p>The .container-fluid class provides a full width container, spanning the entire width of the viewport.</p>           
+</div>    
+</div>
+<br>
+<div class="container-fluid brd2">
+ <div class="container brd3">
+  <h1>My First Bootstrap Page</h1>      
+  <p>This part is inside a .container-fluid class.</p> 
+  <p>The .container-fluid class provides a full width container, spanning the entire width of the viewport.</p>  
+  <img src="https://scontent-hkg3-1.xx.fbcdn.net/v/t1.0-0/p640x640/91185650_686225495456736_6317389472094748672_o.jpg?_nc_cat=101&_nc_sid=ca434c&_nc_ohc=_RE69-Jw5YMAX9WxqMb&_nc_ht=scontent-hkg3-1.xx&_nc_tp=6&oh=6124c203f44462599a1923b77ecea187&oe=5EA59B5F" alt="Smiley face" height=auto width="auto
+  ">
+</div>    
+</div>
+<br>
+<div class="container-fluid brd4">
+ <div class="container brd5">
+  <h1>My First Bootstrap Page</h1>      
+  <p>This part is inside a .container-fluid class.</p> 
+  <p>The .container-fluid class provides a full width container, spanning the entire width of the viewport.</p>  
+  <img src="https://scontent-hkg3-1.xx.fbcdn.net/v/t1.0-9/90783052_1059834251070673_5785867641214205952_n.jpg?_nc_cat=105&_nc_sid=07e735&_nc_ohc=35UzdZzivEsAX8Dy0_o&_nc_ht=scontent-hkg3-1.xx&oh=7b6ae6fa137d3c0b7735e4c65b21a9e0&oe=5EA34FB4" alt="Smiley face" height=auto width="auto
+  ">
+</div>    
+</div>
+<div class="card-container">
+<div class="container-fluid brd6" >
+ <div class="avatar-flip">
+    <img src="https://scontent-hkg3-2.xx.fbcdn.net/v/t1.15752-9/91239574_563210747632297_4705394121697656832_n.png?_nc_cat=109&_nc_sid=b96e70&_nc_ohc=L5WHd_iTFEYAX9V4uRA&_nc_ht=scontent-hkg3-2.xx&oh=fdabfe73a79dbd4d9890c2093e21fcc1&oe=5EA419D2" height="150" width="150">
+    <img src="https://scontent-hkg3-1.xx.fbcdn.net/v/t1.15752-9/91299449_533083784280928_3052945543786397696_n.png?_nc_cat=101&_nc_sid=b96e70&_nc_ohc=lciVuC-bYOoAX-0yzzH&_nc_ht=scontent-hkg3-1.xx&oh=e91221d1751b7b1e31db168d25c923fb&oe=5EA56595" height="150" width="150">
+  </div>
+  <h2>Steve Benjamin</h2>
+  <h4>HOVER OVER CONTAINER</h4>
+  <p style="color:#333";>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas sed diam eget risus varius blandit sit amet non magna ip sum dolore.</p>
+  <p>Connec dolore ipsum faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla.</p>
+  
+</div>
+<div class="container-fluid brd6" >
+ <div class="avatar-flip">
+    <img src="https://scontent-hkg3-2.xx.fbcdn.net/v/t1.15752-9/91239574_563210747632297_4705394121697656832_n.png?_nc_cat=109&_nc_sid=b96e70&_nc_ohc=L5WHd_iTFEYAX9V4uRA&_nc_ht=scontent-hkg3-2.xx&oh=fdabfe73a79dbd4d9890c2093e21fcc1&oe=5EA419D2" height="150" width="150">
+    <img src="https://scontent-hkg3-1.xx.fbcdn.net/v/t1.15752-9/91299449_533083784280928_3052945543786397696_n.png?_nc_cat=101&_nc_sid=b96e70&_nc_ohc=lciVuC-bYOoAX-0yzzH&_nc_ht=scontent-hkg3-1.xx&oh=e91221d1751b7b1e31db168d25c923fb&oe=5EA56595" height="150" width="150">
+  </div>
+  <h2>Steve Benjamin</h2>
+  <h4>HOVER OVER CONTAINER</h4>
+  <p style="color:#333";>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas sed diam eget risus varius blandit sit amet non magna ip sum dolore.</p>
+  <p>Connec dolore ipsum faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla.</p>
+  
+</div>
+<div class="container-fluid brd6" >
+ <div class="avatar-flip">
+    <img src="https://scontent-hkg3-2.xx.fbcdn.net/v/t1.15752-9/91239574_563210747632297_4705394121697656832_n.png?_nc_cat=109&_nc_sid=b96e70&_nc_ohc=L5WHd_iTFEYAX9V4uRA&_nc_ht=scontent-hkg3-2.xx&oh=fdabfe73a79dbd4d9890c2093e21fcc1&oe=5EA419D2" height="150" width="150">
+    <img src="https://scontent-hkg3-1.xx.fbcdn.net/v/t1.15752-9/91299449_533083784280928_3052945543786397696_n.png?_nc_cat=101&_nc_sid=b96e70&_nc_ohc=lciVuC-bYOoAX-0yzzH&_nc_ht=scontent-hkg3-1.xx&oh=e91221d1751b7b1e31db168d25c923fb&oe=5EA56595" height="150" width="150">
+  </div>
+  <h2>Steve Benjamin</h2>
+  <h4>HOVER OVER CONTAINER</h4>
+  <p style="color:#333";>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas sed diam eget risus varius blandit sit amet non magna ip sum dolore.</p>
+  <p>Connec dolore ipsum faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla.</p>
+  
+</div>
+</div>
+</body>
+</html>

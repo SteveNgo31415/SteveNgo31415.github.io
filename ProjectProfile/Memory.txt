@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+MemoryBrain
+</title>
+<link rel="icon" type="image/ico" href="images/logo/logo.png" />
+
+<style>
+body{
+background-color: #252627;
+}
+.container{
+  height:680px;
+  width: 100%;
+  background-color: #00A8CC;
+  text-align: center;
+  border-radius: 10px;
+}
+.level3{
+background-color: #00A8CC;
+}
+.level1{
+background-color: tomato;
+}
+h4 p{
+margin:0;
+padding: 0;
+font-size: 60px;
+}
+button{
+color: #fff;
+background-color:#252627;
+border-radius: 50%;
+height: 80px;
+width: 80px;
+boxshadow:0 2px 20px 0  #fff;
+}
+.title{
+	font-size: 30px;
+    color: #fff;
+    padding: 10px;
+}
+#countdown {
+    text-align: center;
+    padding-top: 100px;
+    font-weight: bold;
+    font-size: 60px;
+}
+</style>
+</head>
+<body>
+<div class="container level1">
+<p class="title">Memory Training Level 1</p>
+<button onclick="myFunction2()">NEXT</button>
+
+<h4><p id="demo"></p><p id="demo1"></p></h4>
+</div>
+<div class="container level3">
+<p class="title">Memory Training Level 3</p>
+<div id="countdown"></div>
+<button onclick="myFunction()" onclick=" secondPass()" >NEXT</button>
+
+<h4><p id="demo2"></p><p id="demo3"></p><p id="demo4"></p><p id="demo5"></p></h4>
+
+</div>
+<script>
+function myFunction() {
+  var x = Math.floor((Math.random() * 1000*100000000000)+1);
+  document.getElementById("demo2").innerHTML = x;
+   var x = Math.floor((Math.random() * 1000*100000000000) + 1);
+  document.getElementById("demo3").innerHTML = x;
+  var x = Math.floor((Math.random() * 1000*100000000000) +1);
+  document.getElementById("demo4").innerHTML = x;
+  var x = Math.floor((Math.random() * 1000*100000000000) +1);
+  document.getElementById("demo5").innerHTML = x;
+}
+function myFunction2() {
+  var x = Math.floor((Math.random() * 1000*100000000000)+1);
+  document.getElementById("demo").innerHTML = x;
+   var x = Math.floor((Math.random() * 1000*100000000000) + 1);
+  document.getElementById("demo1").innerHTML = x;
+}
+var seconds = 180,
+    countDiv = document.getElementById('countdown'),
+    secondPass,
+    countDown = setInterval(function () {
+        "use strict";
+        secondPass();
+    }, 1000);
+function secondPass() {
+    "use strict";
+    var minutes = Math.floor((seconds / 60)),
+        remSeconds = seconds % 60;
+    if (seconds < 10) {
+        remSeconds = "0" + remSeconds;
+    }
+    countDiv.innerHTML = minutes + ":" + remSeconds;
+    if (seconds > 0) {
+        seconds = seconds - 1;
+    } else {
+        clearInterval(countDown);
+        countDiv.innerHTML = 'Done';
+    }
+}
+</script>
+
+</body>
+</html>

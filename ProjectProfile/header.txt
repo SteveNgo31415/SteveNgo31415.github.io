@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+nav {
+  margin-top: 40px;
+  padding: 24px;
+  text-align: right;
+  font-family: Raleway;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+#nav-3 {
+  background: #5175C0;
+  /*opacity: 0.5;*/
+}
+.link-3 {
+  transition: 0.4s;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+.link-3:hover {
+  background-color: #ffffff;
+  color: #EEA200;
+  padding: 24px 10px;
+}
+img{
+ text-align: center;
+height:auto;
+width: auto;
+}
+</style>
+</head>
+<body>
+
+<nav id="nav-3">
+  <a class="link-3" href=" #chau-bui">Home</a>
+  <a class="link-3" href="#blabla">About</a>
+  <a class="link-3" href="#">Contact</a>
+  <a class="link-3" href="#">Shop</a>
+</nav>
+<div  id="dat-mua">
+<p>
+We’re open for you.
+Our retail stores are closed, but you can buy our products here online and get fast, free delivery. If you need help finding the right product or have a question on your order, chat online with a Specialist or call 1-800-MY-APPLE.
+For service and support, visit support.apple.com.
+</p>
+<div  id="dat-mua">
+<p>
+We’re open for you.
+Our retail stores are closed, but you can buy our products here online and get fast, free delivery. If you need help finding the right product or have a question on your order, chat online with a Specialist or call 1-800-MY-APPLE.
+For service and support, visit support.apple.com.
+</p></div>
+<div  id="dat-mua">
+<p>
+We’re open for you.
+Our retail stores are closed, but you can buy our products here online and get fast, free delivery. If you need help finding the right product or have a question on your order, chat online with a Specialist or call 1-800-MY-APPLE.
+For service and support, visit support.apple.com.
+</p></div>
+<div  id="dat-mua">
+<p>
+We’re open for you.
+Our retail stores are closed, but you can buy our products here online and get fast, free delivery. If you need help finding the right product or have a question on your order, chat online with a Specialist or call 1-800-MY-APPLE.
+For service and support, visit support.apple.com.
+</p></div>
+<div  id="dat-mua">
+<p>
+We’re open for you.
+Our retail stores are closed, but you can buy our products here online and get fast, free delivery. If you need help finding the right product or have a question on your order, chat online with a Specialist or call 1-800-MY-APPLE.
+For service and support, visit support.apple.com.
+</p>
+</div>
+<div  id="dat-mua">
+<p>
+We’re open for you.
+Our retail stores are closed, but you can buy our products here online and get fast, free delivery. If you need help finding the right product or have a question on your order, chat online with a Specialist or call 1-800-MY-APPLE.
+For service and support, visit support.apple.com.
+</p>
+</div>
+<div class="girl">
+<p id="chau-bui"> </p>
+<img src="https://scontent-xsp1-2.xx.fbcdn.net/v/t1.0-9/91908496_173891090738438_1420297559678648320_n.jpg?_nc_cat=100&_nc_sid=07e735&_nc_ohc=wwdRlypHkz4AX-2nWKW&_nc_ht=scontent-xsp1-2.xx&oh=9b918a25e41b3757a116591bb2d47dbc&oe=5EA5A8AA" alt="Smiley face" height="42" width="42">
+</div>
+<div class="girl">
+<p id="blabla"> </p>
+<img src="https://scontent-hkg3-2.xx.fbcdn.net/v/t1.0-9/91222063_149939219834781_7037877971234848768_n.jpg?_nc_cat=107&_nc_sid=ca434c&_nc_ohc=NUnRtDXV_XYAX8uuFS2&_nc_ht=scontent-hkg3-2.xx&oh=10e898f69560a0a63d2a87131b56ed7d&oe=5EA57A52" alt="Smiley face" height="42" width="42">
+</div>
+</body>
+</html> 

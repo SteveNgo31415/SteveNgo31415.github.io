@@ -1,0 +1,228 @@
+body {
+    background-color: #222;
+    padding: 0;
+    z-index: 0;
+}
+
+.header {
+    background-color: #222;
+    margin: 0;
+    float: left;
+}
+
+ul {
+    padding: 0 20px 0 0;
+    margin: 0 0 20px 0;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+a {
+    list-style: none;
+    margin-left: 30px;
+    color: #fff;
+    font-size: 50px;
+}
+
+li {
+    color: #252627;
+    padding-top: 30px;
+}
+
+a:hover {
+    color: #00A8CC;
+    font-size: 40px;
+}
+
+a {
+    margin: 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-transform: uppercase;
+    position: ralative;
+    top: 50%;
+    bottom: 50%;
+    transform: translateY(-50%);
+}
+
+.header {
+    height: 85px;
+    width: 100%;
+}
+
+.container {
+    width: 80%;
+    text-align: center;
+    border-radius: 20px;
+    float: right;
+    margin: 20px 140px 20px 0;
+}
+
+.container:hover {
+    box-shadow: 0 4px 15px 0 black;
+}
+
+.level2 {
+    background-color: tomato;
+    height: auto;
+}
+
+.level1 {
+    background-color: #00A8CC;
+    height: auto;
+}
+
+.level3 {
+    background-color: #00A8CC;
+    height: auto;
+}
+
+.level4 {
+    background-color: tomato;
+    height: auto;
+}
+
+.level5 {
+    background-color: #00A8CC;
+    height: auto;
+}
+
+.level6 {
+    background-color: tomato;
+    height: auto;
+}
+
+.level7 {
+    background-color: #00A8CC;
+    height: auto;
+}
+
+.level8 {
+    background-color: tomato;
+    height: auto;
+}
+
+.level9 {
+    background-color: #00A8CC;
+    height: auto;
+}
+
+h4 p {
+    margin: 0;
+    padding: 0;
+    font-size: 65px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+    padding-left: 10px;
+}
+
+img:hover {
+    width: 90px;
+    height: 90px;
+}
+
+button {
+    font-size: 15px;
+    color: #fff;
+    background-color: #252627;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    box-shadow: 0 2px 10px 0 #222;
+}
+
+button:hover {
+    height: 88px;
+    width: 88px;
+    font-size: 20px;
+    color: #00A8CC;
+    box-shadow: 0 0 28px 0 #222;
+}
+
+.gohome {
+    float: bottom;
+    margin-top: 200px;
+    text-align: center;
+}
+
+.gohome:hover {
+    font-size: 40px;
+}
+
+.title {
+    font-size: 30px;
+    color: #fff;
+    padding: 10px;
+    margin: 30px 0 0px 0;
+}
+
+#countdown {
+    text-align: center;
+    padding-top: 30px;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.btn-top {
+    background-image: url(../img/topbtn2.png);
+    background-repeat: no-repeat;
+    border: medium none;
+    bottom: 20px;
+    cursor: pointer;
+    display: none;
+    height: 50px;
+    outline: medium none;
+    padding: 0;
+    position: fixed;
+    right: 20px;
+    width: 50px;
+    z-index: 1;
+}
+
+.hello-guy {
+    height: 180px;
+    width: 100%;
+    background-color: #BEBEBE;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 70px;
+    float: center;
+    color: #252627;
+}
+
+.hello-guy strong {
+    padding-top: 20px;
+}
+
+strong:hover {
+    color: rgb(5, 5, 5);
+}
+
+.btn {
+    background-color: #252627;
+    border: 50%;
+    color: white;
+    padding: 12px 16px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+/* Darker background on mouse-over */
+
+.btn:hover {
+    background-color: black;
+    color: white;
+    font-size: 40px;
+}

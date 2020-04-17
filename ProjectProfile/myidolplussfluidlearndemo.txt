@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+ body {
+	 font-family: 'Poppins', sans-serif;
+	 background: #3282B8;
+	 color: #333;
+}
+  .brd{
+  height: 160px;
+   text-align: center;
+  color: #FFF;
+  background-color: #3282B8;
+  }
+  .bb{
+  height: auto;
+   text-align: center;
+  color: #FFF;
+  background-color: #3282B8;
+  }
+  .brd1{
+  height: 160px;
+  width: 80%;
+   text-align: center;
+  color: #FFF;
+  background-color: #3282B8;
+  }
+  .brd2{
+  height: auto;
+   text-align: center;
+  color: #FFF;
+  background-color: #3282B8;
+  }
+  .brd3{
+  height: auto;
+  width: 80%;
+   text-align: center;
+  color: #FFF;
+  background-color: #0F4C75;
+  }
+  .brd4{
+  height: auto;
+   text-align: center;
+  color: #FFF;
+  background-color: #3282B8;
+  }
+  .brd5{
+  height: auto;
+  width: 80%;
+   text-align: center;
+  color: #FFF;
+  background-color: #BBE1FA;
+  }
+  .card {
+  margin: 20px 10px;
+  }
+  .brd6 {
+  width: 400px;
+  margin: 120px 10px 120px;
+  background-color: #fff;
+  padding: 0 20px 20px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+  -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+  -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+  text-align: center;
+}
+  
+.card-container{
+display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50px;
+}
+  .avatar-flip {
+  border-radius: 100px;
+  overflow: hidden;
+  height: 150px;
+  width: 150px;
+  position: relative;
+  margin: auto;
+  top: -60px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 0 13px #f0f0f0;
+  -webkit-box-shadow: 0 0 0 13px #f0f0f0;
+  -moz-box-shadow: 0 0 0 13px #f0f0f0;
+}
+.avatar-flip img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 100px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+}
+.avatar-flip img:first-child {
+  z-index: 1;
+}
+.avatar-flip img:last-child {
+  z-index: 0;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  opacity: 0;
+}
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+}
+h4 {
+  font-size: 13px;
+  color: #00baff;
+  letter-spacing: 1px;
+  margin-bottom: 25px
+}
+p {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 20px;
+  color: #FFF;
+}
+section.testimonial-section {
+	 text-align: center;
+}
+ section.testimonial-section p.desc {
+	 width: 50%;
+	 margin: 0 auto;
+}
+ .card-container {
+	 display: flex;
+	 flex-wrap: wrap;
+	 justify-content: center;
+	 width: 100%;
+	 margin-top: 50px;
+}
+ .card {
+	 width: 260px;
+	 background: #fff;
+	 padding: 30px;
+	 border-radius: 5px;
+	 margin: 20px 10px;
+	 box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
+	 -webkit-transition: all 200ms ease-in;
+	 -webkit-transform: scale(1);
+	 -ms-transition: all 200ms ease-in;
+	 -ms-transform: scale(1);
+	 -moz-transition: all 200ms ease-in;
+	 -moz-transform: scale(1);
+	 transition: all 200ms ease-in;
+	 transform: scale(1);
+}
+ .card:hover {
+	 background: linear-gradient(to top, #2A7886,#a18cd1 0%, #fbc2eb,#BEEBE9 100%);
+	 color: #fff;
+	 transform: scale(1.1);
+	 box-shadow: 0px 3px 15px #000 50;
+	 -webkit-transition: all 200ms ease-in;
+	 -webkit-transform: scale(1.1);
+	 -ms-transition: all 200ms ease-in;
+	 -ms-transform: scale(1.1);
+	 -moz-transition: all 200ms ease-in;
+	 -moz-transform: scale(1.1);
+	 transition: all 200ms ease-in;
+}
+ .card:hover .card__heading__img {
+	 bottom: 5px;
+	 transition: all 0.3s;
+}
+ .card:hover .card__heading__text p {
+	 color: #fff;
+}
+ .card:hover .card__body:before, .card:hover .card__body:after {
+	 opacity: 0.3;
+}
+ .card__heading {
+	 position: relative;
+}
+ .card__heading__img {
+	 height: 90px;
+	 width: 80px;
+	 position: absolute;
+	 left: 0;
+	 object-fit: cover;
+	 border-radius: 8px;
+	 bottom: -5px;
+}
+ .card__heading__text {
+	 text-align: left;
+	 margin-left: 100px;
+}
+ .card__heading__text h3, .card__heading__text p {
+	 margin: 0;
+	 padding: 0;
+}
+ .card__heading__text p {
+	 color: #666;
+	 font-size: 14px;
+}
+ .card__body {
+	 position: relative;
+	 margin-top: 50px;
+}
+ .card__body:before, .card__body:after {
+	 content: "";
+	 display: block;
+	 position: absolute;
+	 font-size: 40px;
+	 color: #f7f7f7;
+	 z-index: 1;
+}
+ .card__body:before {
+	 font-family: "Font Awesome 5 Free";
+	 font-weight: 900;
+	 content: "\f10d";
+	 top: 0;
+}
+ .card__body:after {
+	 font-family: "Font Awesome 5 Free";
+	 font-weight: 900;
+	 content: "\f10e";
+	 bottom: 0;
+	 right: 0;
+}
+ .card__body p {
+	 position: relative;
+	 z-index: 2;
+	 margin: 0;
+	 text-align: left;
+	 line-height: 2;
+}
+ .desc{
+ color:#FFF;
+ }
+ img {
+  width: 100%;
+  height: 100%;
+  transition: all 700ms ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+.brd7 {
+  margin: 0 auto;
+  width: 100%;
+}
+.brd8 {
+  width: 200px;
+  height: 300px;
+  overflow: hidden;
+  background: #fff;
+  border: 0 solid #fff;
+  border-radius: 3px;
+  float: left;
+  margin-right: 10px;
+}
+.brd9 {
+  width: 200px;
+  height: 300px;
+  overflow: hidden;
+  background: #fff;
+  border: 0px solid #fff;
+  border-radius: 3px;
+  float: left;
+  margin-right: 10px;
+}
+.brd10 {
+  width: 200px;
+  height: 300px;
+  overflow: hidden;
+  background: #fff;
+  border: 0px solid #fff;
+  border-radius: 3px;
+  float: left;
+  margin-right: 10px;
+}
+.brd11 {
+  width: 200px;
+  height: 300px;
+  overflow: hidden;
+  background: #fff;
+  border: 0px solid #fff;
+  border-radius: 3px;
+  float: left;
+  margin-right: 10px;
+}
+.brd12 {
+  width: 200px;
+  height: 300px;
+  overflow: hidden;
+  background: #fff;
+  border: 0px solid #fff;
+  border-radius: 3px;
+  float: left;
+  margin-right: 10px;
+}
+.brd13 {
+  width: 200px;
+  height: 300px;
+  overflow: hidden;
+  background: #fff;
+  border: 0px solid #fff;
+  border-radius: 3px;
+  float: left;
+  margin-right: 10px;
+}
+.brd14 {
+  width: 200px;
+  height: 300px;
+  overflow: hidden;
+  background: #fff;
+  border: 0px solid #fff;
+  border-radius: 3px;
+  float: left;
+  margin-right: 10px;
+}
+.brd15 {
+  width: 200px;
+  height: 300px;
+  overflow: hidden;
+  background: #fff;
+  border: 0px solid #fff;
+  border-radius: 3px;
+  float: left;
+  margin-right: 10px;
+}
+nav {
+  margin-top: 0;
+  padding: 24px;
+  text-align: right;
+  font-family: Raleway;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+#nav-3 {
+  background: #5175C0;
+  /*opacity: 0.5;*/
+}
+.link-3 {
+  transition: 0.4s;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+.link-3:hover {
+  background-color: #ffffff;
+  color: #EEA200;
+  padding: 24px 10px;
+}
+  </style>
+</head>
+<body>
+<div class="container-fluid bb">
+  <nav id="nav-3">
+  <a class="link-3" href=" #chau-bui">Home</a>
+  <a class="link-3" href="#blabla">About</a>
+  <a class="link-3" href="#">Contact</a>
+  <a class="link-3" href="#">Shop</a>
+</nav>
+</div>
+<div class="container-fluid brd">
+ <div class="container brd1">
+  <h1>My First Bootstrap Page</h1>      
+  <p>This part is inside a .container-fluid class.</p> 
+  <p>The .container-fluid class provides a full width container, spanning the entire width of the viewport.</p>           
+</div>    
+</div>
+<br>
+<div class="container-fluid brd2">
+ <div class="container brd3">
+  <h1>My First Bootstrap Page</h1>      
+  <p>This part is inside a .container-fluid class.</p> 
+  <p>The .container-fluid class provides a full width container, spanning the entire width of the viewport.</p>  
+  <img src="https://scontent-hkg3-1.xx.fbcdn.net/v/t1.0-0/p640x640/91185650_686225495456736_6317389472094748672_o.jpg?_nc_cat=101&_nc_sid=ca434c&_nc_ohc=_RE69-Jw5YMAX9WxqMb&_nc_ht=scontent-hkg3-1.xx&_nc_tp=6&oh=6124c203f44462599a1923b77ecea187&oe=5EA59B5F" alt="Smiley face" height=auto width="auto
+  ">
+</div>    
+<div class="container brd3">
+  <h1>My First Bootstrap Page</h1>      
+  <p>This part is inside a .container-fluid class.</p> 
+  <p>The .container-fluid class provides a full width container, spanning the entire width of the viewport.</p>  
+  <img src="https://scontent-hkg3-1.xx.fbcdn.net/v/t1.0-0/p640x640/91185650_686225495456736_6317389472094748672_o.jpg?_nc_cat=101&_nc_sid=ca434c&_nc_ohc=_RE69-Jw5YMAX9WxqMb&_nc_ht=scontent-hkg3-1.xx&_nc_tp=6&oh=6124c203f44462599a1923b77ecea187&oe=5EA59B5F" alt="Smiley face" height=auto width="auto
+  ">
+</div>    
+</div>
+<br>
+<div class="container-fluid brd4">
+ <div class="container brd5">
+  <h1>My First Bootstrap Page</h1>      
+  <p>This part is inside a .container-fluid class.</p> 
+  <p>The .container-fluid class provides a full width container, spanning the entire width of the viewport.</p>  
+  <img src="https://scontent-hkg3-1.xx.fbcdn.net/v/t1.0-9/90783052_1059834251070673_5785867641214205952_n.jpg?_nc_cat=105&_nc_sid=07e735&_nc_ohc=35UzdZzivEsAX8Dy0_o&_nc_ht=scontent-hkg3-1.xx&oh=7b6ae6fa137d3c0b7735e4c65b21a9e0&oe=5EA34FB4" alt="Smiley face" height=auto width="auto
+  ">
+</div>    
+</div>
+<main class="container">
+  <section class="testimonial-section">
+    <h1 class="desc">I'm designing My profile</h1>
+    <div class="card-container">
+      <div class="card">
+        <div class="card__heading">
+          <img class="card__heading__img" src="https://cdn.vox-cdn.com/thumbor/TN8KVPXDr7xVJH3Y3AlNWVs6Hhk=/0x86:706x557/1400x1400/filters:focal(0x86:706x557):format(png)/cdn.vox-cdn.com/assets/738480/stevejobs.png" alt="">
+          <div class="card__heading__text">
+            <h3>Steve Jobs</h3>
+            <p>CEO Apple</p>
+          </div>
+        </div>
+        <div class="card__body">
+          <p>A</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__heading">
+          <img class="card__heading__img" src="https://pbs.twimg.com/profile_images/988775660163252226/XpgonN0X_400x400.jpg" alt="">
+          <div class="card__heading__text">
+            <h3>Bill gates</h3>
+   <p>President Microsoft</p>
+          </div>
+        </div>
+        <div class="card__body">
+          <p>B</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__heading">
+          <img class="card__heading__img" src="https://www.biography.com/.image/t_share/MTE5NDg0MDU0OTU2OTAxOTAz/albert-einstein-9285408-1-402.jpg" alt="">
+          <div class="card__heading__text">
+            <h3>Albert einstein</h3>
+            <p>Theoretical physicist</p>
+          </div>
+        </div>
+        <div class="card__body">
+          <p>C</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__heading">
+          <img class="card__heading__img" src="https://i.insider.com/55e896aa9dd7cc1a008b8058?width=1024&format=jpeg" alt="">
+          <div class="card__heading__text">
+            <h3>Benjamin Franklin</h3>
+            <p>Americans first</p>
+          </div>
+        </div>
+        
+        <div class="card__body">
+          <p>D</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<div class="container-fluid brd7">
+<div class=" brd8">
+<img src="https://assets.mubi.com/images/notebook/post_images/22621/images-w1400.jpg?1481167057" alt="" />
+</div>
+
+<div class=" brd9">
+<img src="https://i.pinimg.com/736x/77/da/b5/77dab5d1d289d7e1054a89b3149554f0--alfie-allen-movieposter.jpg" alt="" />
+</div>
+
+<div class=" brd10">
+<img src="https://i.pinimg.com/736x/00/7d/ac/007dacf8c4a0b14a5827dc5e8fe30986--movieposter-mocking-jay.jpg" alt="" />
+</div>
+
+<div class=" brd11">
+<img src="https://i.pinimg.com/originals/7f/d6/d3/7fd6d3a2aa4cfae03c6b967ee0c179b2.jpg" alt="" />
+</div>
+
+<div class=" brd12">
+<img src="https://i.pinimg.com/736x/9e/5d/d0/9e5dd0d566b3676e9d8ac72c8247fb65--poster-film-movie-posters.jpg" alt="" />
+</div>
+
+<div class=" brd13">
+<img src="https://i.pinimg.com/736x/79/b2/69/79b269ce2626e7c5f30c48bfaf18cda4--terror-movies-scary-movies.jpg" alt="" />
+</div>
+</div>
+</div>
+<div class="girl">
+<p id="chau-bui"> </p>
+<img src="https://scontent-xsp1-2.xx.fbcdn.net/v/t1.0-9/91908496_173891090738438_1420297559678648320_n.jpg?_nc_cat=100&_nc_sid=07e735&_nc_ohc=wwdRlypHkz4AX-2nWKW&_nc_ht=scontent-xsp1-2.xx&oh=9b918a25e41b3757a116591bb2d47dbc&oe=5EA5A8AA" alt="Smiley face" height="42" width="42">
+</div>
+<div class="girl">
+<p id="blabla"> </p>
+<img src="https://scontent-hkg3-2.xx.fbcdn.net/v/t1.0-9/91222063_149939219834781_7037877971234848768_n.jpg?_nc_cat=107&_nc_sid=ca434c&_nc_ohc=NUnRtDXV_XYAX8uuFS2&_nc_ht=scontent-hkg3-2.xx&oh=10e898f69560a0a63d2a87131b56ed7d&oe=5EA57A52" alt="Smiley face" height="42" width="42">
+</div>
+</body>
+</html>
