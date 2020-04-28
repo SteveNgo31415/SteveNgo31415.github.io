@@ -73,12 +73,14 @@ function myFunction5() {
 }
 
 function myFunction4() {
-    var x = Math.floor((Math.random() * 1000 * 10000000000000) + 1);
+    var x = Math.floor((Math.random() * 1000 * 100000000000) + 1);
     document.getElementById("demo6").innerHTML = x;
-    var x = Math.floor((Math.random() * 1000 * 10000000000000) + 1);
+    var x = Math.floor((Math.random() * 1000 * 100000000000) + 1);
     document.getElementById("demo7").innerHTML = x;
-    var x = Math.floor((Math.random() * 1000 * 10000000000000) + 1);
+    var x = Math.floor((Math.random() * 1000 * 100000000000) + 1);
     document.getElementById("demo8").innerHTML = x;
+    var x = Math.floor((Math.random() * 1000 * 100000) + 1);
+    document.getElementById("demo39").innerHTML = x;
 }
 
 function myFunction3() {
